@@ -47,14 +47,28 @@
       </header>
       <main>
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-        <input type="search" />
-        <div>
+        <p class="text-description">
+          En plein centre-ville ou en pleine nature
+        </p>
+        <form method="get" action="">
+          <label for="city" class="location-button"
+            ><i
+              class="fa-sharp fa-solid fa-location-dot"
+              style="color: #000000"
+            ></i
+          ></label>
+          <input
+            type="search"
+            name="city"
+            id="city"
+            placeholder="Marseille,France"
+          />
+        </form>
+        <div class="filter">
           <h2>Filtres</h2>
           <div>Economique</div>
           <div>Familial</div>
           <div>Romantique</div>
-          <div>Animaux autorisés</div>
         </div>
         <div>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>

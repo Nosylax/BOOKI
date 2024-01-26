@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  /*outline: 1px solid red; */
 }
 
 :root {
@@ -22,7 +23,7 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
+  padding: 0 55px;
   box-sizing: border-box;
 }
 
@@ -59,6 +60,20 @@ a {
   color: var(--main-bg-color);
 }
 
+h1 {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.text-description {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
 /****** Header ***********/
 header {
   display: flex;
@@ -67,13 +82,14 @@ header {
 
 nav {
   display: flex;
-  width: 324px;
+  gap: 67px;
 }
 
 .nav-titles {
   padding-top: 48px;
   padding-bottom: 43px;
-  width: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
 }
 
@@ -89,7 +105,30 @@ nav {
   height: 19px;
   padding-top: 44px;
   padding-bottom: 47px;
-  padding-left: 55px;
+}
+
+/****** Form ***********/
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.location-button {
+  border-radius: 15px 0px 0px 15px;
+  border: 1px solid var(--main-bg-color);
+  background-color: var(--main-color);
+  border-color: white;
+  width: 50px;
+  height: 49px;
+  display: flex;
+}
+
+::placeholder {
+  color: var(--Black, #000);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -201,6 +240,14 @@ nav {
 
   nav {
     width: 100%;
+    gap: 0;
+  }
+
+  .nav-titles {
+    padding-bottom: 23.9px;
+    padding-top: 38px;
+    width: 50%;
+    border-bottom: 3px var(--main-bg-color) solid;
   }
 
   .nav-titles:hover {
@@ -210,10 +257,6 @@ nav {
     text-shadow: none;
   }
 
-  .nav-titles {
-    padding-bottom: 23.9px;
-    padding-top: 38.56px;
-  }
   .logo {
     padding: 0;
     padding-top: 21px;
@@ -222,5 +265,14 @@ nav {
 
   .main-container {
     padding: 0;
+  }
+
+  h1 {
+    padding-top: 31px;
+  }
+
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
