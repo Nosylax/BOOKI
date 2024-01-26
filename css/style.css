@@ -122,6 +122,8 @@ nav {
   width: 50px;
   height: 49px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ::placeholder {
@@ -129,6 +131,26 @@ nav {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
+}
+
+.location-icon {
+  width: 14px;
+  height: 18px;
+}
+
+.search-button {
+  display: inline-flex;
+  height: 49px;
+  padding: 15px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 15px 15px 0px;
+  border: 1px solid var(--Blue, #0065fc);
+  background: var(--Blue, #0065fc);
+}
+
+.search-button:active {
+  /*TODO : mettre les propriétés pour le bouton cliqué */
 }
 
 /****** Hebergements And Populaires ***********/
