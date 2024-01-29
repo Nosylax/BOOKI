@@ -50,6 +50,7 @@
         <p class="text-description">
           En plein centre-ville ou en pleine nature
         </p>
+
         <form method="get" action="" class="search-bar">
           <label for="city" class="location-button"
             ><i
@@ -58,21 +59,43 @@
             ></i
           ></label>
           <input
+            class="bar"
             type="search"
             name="city"
             id="city"
-            placeholder="Marseille,France"
+            placeholder="Ex: Marseille, France"
           />
-          <button class="search-button">RECHERCHER</button>
+          <button class="search-button">Rechercher</button>
         </form>
+
         <div class="filter">
           <h2>Filtres</h2>
-          <div>Economique</div>
-          <div>Familial</div>
-          <div>Romantique</div>
+
+          <div class="filter-item">
+            <i
+              class="fa-sharp fa-solid fa-money-bill-wave fa-lg"
+              style="color: #0065fc"
+            ></i>
+            Economique
+          </div>
+          <div class="filter-item">
+            <i class="fa-solid fa-person fa-lg" style="color: #0065fc"></i>
+            Familial
+          </div>
+          <div class="filter-item">
+            <i class="fa-solid fa-heart fa-lg" style="color: #0065fc"></i>
+            Romantique
+          </div>
+          <div class="filter-item">
+            <i class="fa-solid fa-dog fa-lg" style="color: #0065fc"></i>
+            Animaux autorisés
+          </div>
         </div>
         <div>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          <p>
+            <i class="fa-solid fa-info fa-sm" style="color: #0065fc"></i>
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
         </div>
 
         <div class="hebergements-and-populaires">

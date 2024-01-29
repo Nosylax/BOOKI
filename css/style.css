@@ -62,11 +62,14 @@ a {
 
 h1 {
   font-size: 23px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin: 0;
   margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .text-description {
@@ -118,10 +121,8 @@ nav {
 
 .location-button {
   border-radius: 15px 0px 0px 15px;
-  border: 1px solid var(--main-bg-color);
-  background-color: var(--main-color);
-  border-color: white;
-  width: 50px;
+  background-color: var(--main-bg-color);
+  min-width: 50px;
   height: 49px;
   display: flex;
   align-items: center;
@@ -130,28 +131,93 @@ nav {
 
 ::placeholder {
   color: var(--Black, #000);
-  text-align: center;
+  text-align: start;
   font-size: 18px;
   font-weight: 700;
+  opacity: 40%;
 }
 
 .search-button {
   display: inline-flex;
   height: 49px;
-  padding: 15px 16px;
+  padding: 16px 16px;
   align-items: center;
-  gap: 10px;
+  border: 0px;
   border-radius: 0px 15px 15px 0px;
-  border: 1px solid var(--Blue, #0065fc);
-  background: var(--Blue, #0065fc);
+  background: var(--main-color);
   color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .search-bar {
   display: flex;
 }
 
+input {
+  width: 260px;
+  height: 49px;
+  border: 1px solid var(--main-bg-color);
+  border-right: none;
+  border-left: none;
+  padding-left: 17px;
+}
+
+input:focus {
+  outline: var(--main-color);
+  text-align: start;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 17px;
+}
+
+.search-button:hover {
+  transition: all 0.5s;
+  background-color: rgb(9, 9, 187);
+}
+
 .search-button:active {
-  /*TODO : mettre les propriétés pour le bouton cliqué */
+  transition: all 0.5s;
+  background-color: var(--main-color);
+}
+
+form {
+  padding-bottom: 36px;
+  margin: 0;
+}
+
+/****** Filter ***********/
+
+.filter {
+  gap: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  border-radius: 25px;
+  border: 2px solid #d9d9d9;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.filter-item:hover {
+  background-color: #deebff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.filter-item::selection {
+  background-color: #deebff;
+  transition: all 0.5s;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -298,5 +364,8 @@ nav {
   main {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  button {
   }
 }
