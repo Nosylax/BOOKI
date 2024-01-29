@@ -91,6 +91,8 @@ nav {
   padding-right: 20px;
   padding-left: 20px;
   text-align: center;
+  border-top: 2px white solid;
+  transition: all;
 }
 
 .nav-titles:hover {
@@ -147,6 +149,10 @@ nav {
   border-radius: 0px 15px 15px 0px;
   border: 1px solid var(--Blue, #0065fc);
   background: var(--Blue, #0065fc);
+  color: white;
+}
+.search-bar {
+  display: flex;
 }
 
 .search-button:active {
@@ -270,6 +276,7 @@ nav {
     padding-top: 38px;
     width: 50%;
     border-bottom: 3px var(--main-bg-color) solid;
+    border-top: none;
   }
 
   .nav-titles:hover {
