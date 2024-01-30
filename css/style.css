@@ -161,15 +161,14 @@ input {
   border: 1px solid var(--main-bg-color);
   border-right: none;
   border-left: none;
+  font-size: 18px;
+  font-weight: 700;
   padding-left: 17px;
 }
 
 input:focus {
   outline: var(--main-color);
   text-align: start;
-  font-size: 18px;
-  font-weight: 700;
-  padding-left: 17px;
 }
 
 .search-button:hover {
@@ -215,7 +214,7 @@ form {
   cursor: pointer;
 }
 
-.filter-item::selection {
+.filter-item: {
   background-color: #deebff;
   transition: all 0.5s;
 }
