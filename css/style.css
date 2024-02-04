@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-.section-title {
+h1 {
   margin: 0;
   font-size: 22px;
 }
@@ -48,8 +48,10 @@ a {
   object-fit: cover;
 }
 
-.card-title {
+h3 {
   font-size: 16px;
+  margin-top: 9px;
+  margin-bottom: 8px;
 }
 
 .euro {
@@ -61,8 +63,9 @@ a {
 }
 
 h2 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
+  margin: 0;
 }
 
 .text-description {
@@ -187,6 +190,7 @@ form {
   margin-bottom: 35px;
   font-weight: 700;
   font-size: 17px;
+  align-items: center;
 }
 
 .filter-direction {
@@ -248,15 +252,18 @@ form {
 .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 33px;
+  gap: 5%;
+  margin-top: 30px;
+}
+
+.hebergements-cards a {
+  width: 30%;
 }
 
 .hebergements-cards .card {
   display: flex;
   flex-direction: column;
-  width: 228px; /*TODO passer en %*/
-  height: 207px;
+  margin-bottom: 30px;
 }
 
 .hebergements-cards img {
@@ -276,8 +283,7 @@ form {
 
 .hebergements-cards .card-title {
   margin-top: 10px;
-  margin-bottom: 4px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .hebergements-cards .card-subtitle {
@@ -288,6 +294,7 @@ form {
 
 .hebergements .card-rating {
   margin-bottom: 5px;
+  font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -442,7 +449,8 @@ form {
 
   .filter {
     flex-direction: column;
-    gap: 0px;
+    gap: 15px;
+    align-items: start;
   }
 
   .filter-direction {
