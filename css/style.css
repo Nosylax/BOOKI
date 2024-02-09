@@ -10,6 +10,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --border-color: #d9d9d9;
 }
 
 body {
@@ -156,8 +157,7 @@ input:focus {
   font-size: 18px;
   font-weight: 700;
   text-align: start;
-  color: var(--Black, #000);
-  opacity: 40%;
+  color: rgb(151, 148, 148);
 }
 
 .search-button {
@@ -214,7 +214,7 @@ input:focus {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 2px solid #d9d9d9;
+  border: 2px solid var(--border-color);
   border-radius: 25px;
   transition: all 0.5s;
 }
@@ -225,7 +225,7 @@ input:focus {
 }
 
 .icon-border {
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--border-color);
   border-radius: 50%;
   min-width: 24px;
   height: 24px;
@@ -325,8 +325,6 @@ input:focus {
 .populaires-cards .card-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
   padding-left: 15px;
   width: 67%;
 }
@@ -345,6 +343,43 @@ input:focus {
   margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+
+.activites {
+  margin: 35px 30px;
+}
+
+.activites-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.activites-card .card {
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.activites-card .card-content {
+  padding-left: 15px;
+}
+
+.activites-card img {
+  width: 290px;
+  height: 380px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/****** Footer ***********/
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -360,7 +395,7 @@ input:focus {
 
   .populaires {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 59px;
   }
 
   .populaires-cards {
