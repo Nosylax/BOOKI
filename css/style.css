@@ -508,12 +508,20 @@ footer {
 
   /****** Hebergements ***********/
 
+  .hebergements {
+    margin-top: 26px;
+  }
+
   .hebergements-cards a {
     width: 100%;
   }
 
   .hebergements-cards .card {
     margin-bottom: 12px;
+  }
+
+  .hebergements-cards {
+    margin-top: 19px;
   }
 
   /****** Populaires ***********/
@@ -543,4 +551,24 @@ footer {
   }
 
   /****** Activite ***********/
+
+  .activites {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .activites-card {
+    display: block;
+    margin-top: 26px;
+  }
+
+  .activites-card img {
+    height: 115px;
+    width: 100%;
+  }
+
+  .activites-card .card {
+    width: 100%;
+    margin-bottom: 24px;
+  }
 }
