@@ -352,16 +352,16 @@ input:focus {
 
 .activites-card {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 30px;
   gap: 30px;
-  margin-bottom: 30px;
-  justify-content: space-between;
+  margin-bottom: 61px;
 }
 
 .activites-card .card {
   padding: 0;
   padding-bottom: 20px;
+  flex-basis: calc(25% - 15px);
+  overflow: hidden;
 }
 
 .activites-card .card-content {
@@ -369,17 +369,36 @@ input:focus {
 }
 
 .activites-card img {
-  width: 290px;
   height: 380px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  min-width: 100%;
 }
 
 /****** Footer ***********/
 
 footer {
   display: flex;
+  gap: 15%;
+  padding-top: 45px;
+  padding-left: 118px;
+}
+
+.footer-title {
+  display: flex;
   flex-direction: column;
+}
+
+.footer-description {
+  display: contents;
+}
+
+footer a {
+  padding-bottom: 12px;
+}
+
+footer h2 {
+  padding-bottom: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
